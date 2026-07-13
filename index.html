@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5">
+    <title>СПЕЦТЕХНИК - Ремонт квадроциклов, снегоходов, лодок и спецтехники в Томске</title>
+    <meta name="description" content="ООО СПЕЦТЕХНИК - профессиональный ремонт и сервисное обслуживание спецтехники в Томске. Квадроциклы, снегоходы, вездеходы, моторные лодки, газонокосилки. Бесплатная диагностика, выезд мастера.">
+    <meta name="keywords" content="ремонт квадроциклов Томск, ремонт снегоходов, сервис лодочных моторов, ремонт вездеходов, заточка газонокосилок, СПЕЦТЕХНИК, мотосервис Томск, ремонт спецтехники, диагностика двигателей">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="frontend/images/favicon-32x32.png?v=2">
+    <link rel="icon" type="image/png" sizes="16x16" href="frontend/images/favicon-16x16.png?v=2">
+    <link rel="shortcut icon" href="frontend/images/favicon.jpg?v=2">
+    <link rel="apple-touch-icon" sizes="180x180" href="frontend/images/apple-touch-icon.png?v=2">
+
+    <!-- Шрифты -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- CSS стили -->
+    <link rel="stylesheet" href="frontend/styles.css?v=5">
+</head>
+
+<body>
+    <!-- ШАПКА / ДАШБОРД-НАВИГАЦИЯ -->
+    <header class="dash-nav">
+        <div class="dash-nav-inner">
+            <a href="#top" class="dash-logo">
+                <img src="images/logo.jpg" alt="Логотип СПЕЦТЕХНИК">
+            </a>
+            <nav class="dash-nav-links">
+                <a href="#log">журнал</a>
+                <a href="#diagnostics">диагностика</a>
+                <a href="#equipment">техника</a>
+                <a href="#engines">двигатели</a>
+                <a href="#stages">этапы</a>
+                <a href="#request-form" class="dash-nav-cta">оставить заявку</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="top">
+        <!-- HERO: ПРИБОРНАЯ ПАНЕЛЬ -->
+        <section class="hero-dash">
+            <div class="hero-dash-grid"></div>
+            <div class="hero-dash-content">
+                <div class="hero-status mono animate-up delay-1">
+                    <span class="hero-status-dot"></span> СИСТЕМА ДИАГНОСТИКИ АКТИВНА
+                </div>
+                <h1 class="hero-dash-title animate-up delay-2">Компьютерная <span class="hero-title-accent">диагностика</span><br>и ремонт техники под ключ</h1>
+                <p class="hero-dash-sub animate-up delay-3">
+                    Квадроциклы, снегоходы, вездеходы, лодочные моторы и бензоинструмент.
+                    Точная диагностика, честная дефектовка, гарантия на все работы. Томск.
+                </p>
+                <div class="hero-dash-actions animate-up delay-4">
+                    <a href="#request-form" class="btn-primary"><i class="fas fa-bolt"></i> записаться на диагностику</a>
+                    <a href="#diagnostics" class="btn-ghost"><i class="fas fa-terminal"></i> как проходит проверка</a>
+                </div>
+
+                <a href="#log" class="hero-ticker mono animate-up delay-5">
+                    <i class="fas fa-circle"></i> смотреть журнал сервиса — что сейчас в работе
+                </a>
+            </div>
+        </section>
+
+        <!-- БЛОК: ЖУРНАЛ СЕРВИСА (ЗАМЕНА HERO-МЕТРИК) -->
+        <section class="section-block" id="log">
+            <div class="section-label mono animate-slide delay-1">// 00 — журнал</div>
+            <h2 class="section-title animate-slide delay-1">Журнал сервиса</h2>
+            <p class="animate-slide delay-1" style="color: var(--text-dim); max-width: 680px; margin: -1.4rem 0 2rem; font-size: 0.98rem;">
+                Так может выглядеть лента статусов в нашей внутренней системе учёта — иллюстративный пример того, как техника проходит через приёмку, диагностику и ремонт.
+            </p>
+
+            <div class="log-card animate-up delay-2">
+                <div class="log-head">
+                    <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+                    <span class="log-title mono">service.log — сегодня</span>
+                </div>
+                <div class="log-body">
+                    <div class="log-row">
+                        <span class="log-time mono">09:14</span>
+                        <span class="log-text">принят <b>снегоход Ski-Doo</b> — плановое ТО</span>
+                        <span class="log-status progress">В ОЧЕРЕДИ</span>
+                    </div>
+                    <div class="log-row">
+                        <span class="log-time mono">10:02</span>
+                        <span class="log-text">квадроцикл <b>Yamaha Grizzly</b> — замер компрессии</span>
+                        <span class="log-status ok">OK</span>
+                    </div>
+                    <div class="log-row">
+                        <span class="log-time mono">11:35</span>
+                        <span class="log-text">лодочный мотор <b>Yamaha 40</b> — обнаружена течь редуктора</span>
+                        <span class="log-status attention">ТРЕБУЕТ ВНИМАНИЯ</span>
+                    </div>
+                    <div class="log-row">
+                        <span class="log-time mono">13:10</span>
+                        <span class="log-text">вездеход — дефектовка согласована с клиентом</span>
+                        <span class="log-status progress">В РАБОТЕ</span>
+                    </div>
+                    <div class="log-row">
+                        <span class="log-time mono">14:20</span>
+                        <span class="log-text">снегоход <b>Буран</b> — заменён вариатор, тест-драйв</span>
+                        <span class="log-status ok">ГОТОВО</span>
+                    </div>
+                    <div class="log-row">
+                        <span class="log-time mono">16:45</span>
+                        <span class="log-text">бензопила <b>Husqvarna</b> — заточка и регулировка карбюратора, выдана</span>
+                        <span class="log-status ok">ВЫДАНО</span>
+                    </div>
+                </div>
+            </div>
+            <p class="log-note animate-up delay-3">Пример носит иллюстративный характер и показывает типовой путь техники в сервисе — от приёмки до выдачи.</p>
+        </section>
+
+        <!-- БЛОК: ПОЧЕМУ ЦИФРОВОЙ ПОДХОД -->
+        <section class="section-block section-alt" id="why">
+            <div class="section-label mono animate-slide delay-1">// 01 — подход</div>
+            <h2 class="section-title animate-slide delay-1">Почему цифровая диагностика, а не «на глаз»</h2>
+
+            <div class="value-grid">
+                <div class="value-card animate-up delay-1">
+                    <div class="value-icon"><i class="fas fa-crosshairs"></i></div>
+                    <div class="value-stat mono">±0.1 бар</div>
+                    <h3>Точность</h3>
+                    <p>Компрессию, давление топлива и параметры ECU измеряем приборами, а не определяем на слух — там, где на глаз легко ошибиться.</p>
+                </div>
+                <div class="value-card animate-up delay-2">
+                    <div class="value-icon"><i class="fas fa-eye"></i></div>
+                    <div class="value-stat mono">фото / видео</div>
+                    <h3>Прозрачность</h3>
+                    <p>Фиксируем показания и дефекты на фото и видео до начала работ — вы видите то же, что и мастер, и согласуете смету осознанно.</p>
+                </div>
+                <div class="value-card animate-up delay-3">
+                    <div class="value-icon"><i class="fas fa-piggy-bank"></i></div>
+                    <div class="value-stat mono">без переплат</div>
+                    <h3>Экономия</h3>
+                    <p>Диагностика показывает, какой узел реально неисправен — меняем только его, а не весь агрегат «на всякий случай».</p>
+                </div>
+                <div class="value-card animate-up delay-4">
+                    <div class="value-icon"><i class="fas fa-gauge-high"></i></div>
+                    <div class="value-stat mono">1 визит</div>
+                    <h3>Скорость</h3>
+                    <p>Компьютерная диагностика находит причину за одно посещение вместо серии проб и ошибок — меньше простоя техники.</p>
+                </div>
+            </div>
+
+            <div class="value-badges animate-up delay-5">
+                <span class="value-badge"><i class="fas fa-file-shield"></i> гарантия на все работы</span>
+                <span class="value-badge"><i class="fas fa-user-gear"></i> сертифицированные мастера</span>
+                <span class="value-badge"><i class="fas fa-truck-fast"></i> выездной и срочный ремонт</span>
+            </div>
+        </section>
+
+        <!-- БЛОК: ОТЧЁТ ДИАГНОСТИКИ -->
+        <section class="section-block" id="diagnostics">
+            <div class="section-label mono animate-slide delay-1">// 02 — диагностика</div>
+            <h2 class="section-title animate-slide delay-1">Отчёт диагностики: как читаем показатели</h2>
+
+            <div class="diag-legend animate-slide delay-2">
+                <span><span class="legend-dot ok"></span> OK — в норме</span>
+                <span><span class="legend-dot warn"></span> требует внимания</span>
+                <span><span class="legend-dot crit"></span> критично, нужен ремонт</span>
+            </div>
+
+            <div class="diag-report">
+                <div class="diag-param animate-up delay-1">
+                    <div class="diag-param-head">
+                        <span><i class="fas fa-gauge"></i> компрессия цилиндров</span>
+                        <span class="diag-status ok">OK</span>
+                    </div>
+                    <div class="diag-bar"><div class="diag-bar-fill ok" style="width: 92%;"></div></div>
+                    <p class="diag-note">Типичная просадка — износ поршневых колец у квадроциклов и снегоходов с большим пробегом.</p>
+                </div>
+                <div class="diag-param animate-up delay-2">
+                    <div class="diag-param-head">
+                        <span><i class="fas fa-gas-pump"></i> топливная система</span>
+                        <span class="diag-status warn">ВНИМАНИЕ</span>
+                    </div>
+                    <div class="diag-bar"><div class="diag-bar-fill warn" style="width: 58%;"></div></div>
+                    <p class="diag-note">Частая история для лодочных моторов после зимнего хранения — окисление и лак в карбюраторе.</p>
+                </div>
+                <div class="diag-param animate-up delay-3">
+                    <div class="diag-param-head">
+                        <span><i class="fas fa-microchip"></i> электроника и датчики ECU</span>
+                        <span class="diag-status ok">OK</span>
+                    </div>
+                    <div class="diag-bar"><div class="diag-bar-fill ok" style="width: 97%;"></div></div>
+                    <p class="diag-note">Коды ошибок и показания датчиков считываются напрямую с блока управления.</p>
+                </div>
+                <div class="diag-param animate-up delay-4">
+                    <div class="diag-param-head">
+                        <span><i class="fas fa-car-burst"></i> ходовая часть и подвеска</span>
+                        <span class="diag-status crit">КРИТИЧНО</span>
+                    </div>
+                    <div class="diag-bar"><div class="diag-bar-fill crit" style="width: 34%;"></div></div>
+                    <p class="diag-note">На вездеходах и квадроциклах после бездорожья часто изношены сайлентблоки и ШРУСы.</p>
+                </div>
+                <div class="diag-param animate-up delay-5">
+                    <div class="diag-param-head">
+                        <span><i class="fas fa-gears"></i> вариатор и трансмиссия</span>
+                        <span class="diag-status warn">ВНИМАНИЕ</span>
+                    </div>
+                    <div class="diag-bar"><div class="diag-bar-fill warn" style="width: 71%;"></div></div>
+                    <p class="diag-note">У снегоходов — типичный износ ремня вариатора и роликов при активной эксплуатации.</p>
+                </div>
+                <div class="diag-param animate-up delay-6">
+                    <div class="diag-param-head">
+                        <span><i class="fas fa-bolt"></i> зажигание и стартер</span>
+                        <span class="diag-status ok">OK</span>
+                    </div>
+                    <div class="diag-bar"><div class="diag-bar-fill ok" style="width: 88%;"></div></div>
+                    <p class="diag-note">Актуально для бензоинструмента — проверяем свечу, катушку зажигания, стартерный узел.</p>
+                </div>
+            </div>
+
+            <h3 class="animate-slide delay-1" style="color:#fff; font-family:'Rajdhani',sans-serif; font-size:1.3rem; margin-bottom:1.2rem;">Типичные неисправности по видам техники</h3>
+            <div class="diag-types">
+                <div class="diag-type-card animate-scale delay-1">
+                    <h4><i class="fas fa-motorcycle"></i> Квадроциклы</h4>
+                    <ul>
+                        <li>износ ШРУСов и сайлентблоков</li>
+                        <li>подтёки масла из редуктора</li>
+                        <li>ошибки датчиков впрыска</li>
+                    </ul>
+                </div>
+                <div class="diag-type-card animate-scale delay-2">
+                    <h4><i class="fas fa-snowplow"></i> Снегоходы</h4>
+                    <ul>
+                        <li>износ ремня вариатора</li>
+                        <li>растянутая гусеница</li>
+                        <li>залипание карбюратора</li>
+                    </ul>
+                </div>
+                <div class="diag-type-card animate-scale delay-3">
+                    <h4><i class="fas fa-truck-monster"></i> Вездеходы</h4>
+                    <ul>
+                        <li>износ трансмиссии</li>
+                        <li>люфты в подвеске</li>
+                        <li>коррозия электропроводки</li>
+                    </ul>
+                </div>
+                <div class="diag-type-card animate-scale delay-4">
+                    <h4><i class="fas fa-ship"></i> Моторные лодки</h4>
+                    <ul>
+                        <li>окисление карбюратора после зимы</li>
+                        <li>течь редуктора</li>
+                        <li>повреждение гребного винта</li>
+                    </ul>
+                </div>
+                <div class="diag-type-card animate-scale delay-5">
+                    <h4><i class="fas fa-toolbox"></i> Бензоинструмент</h4>
+                    <ul>
+                        <li>износ свечи и катушки зажигания</li>
+                        <li>затупление цепи/ножа</li>
+                        <li>переобогащённая топливная смесь</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- БЛОК: ВИДЫ ТЕХНИКИ -->
+        <section class="section-block section-alt" id="equipment">
+            <div class="section-label mono animate-slide delay-1">// 03 — направления</div>
+            <h2 class="section-title animate-slide delay-1">С какой техникой работаем</h2>
+
+            <div class="equipment-grid">
+                <div class="equipment-tile animate-scale delay-1">
+                    <i class="fas fa-motorcycle"></i>
+                    <span>Квадроциклы</span>
+                    <small>двигатель, вариатор, ходовая</small>
+                </div>
+                <div class="equipment-tile animate-scale delay-2">
+                    <i class="fas fa-snowplow"></i>
+                    <span>Снегоходы</span>
+                    <small>вариатор, гусеница, зажигание</small>
+                </div>
+                <div class="equipment-tile animate-scale delay-3">
+                    <i class="fas fa-truck-monster"></i>
+                    <span>Вездеходы</span>
+                    <small>трансмиссия, ходовая, электрика</small>
+                </div>
+                <div class="equipment-tile animate-scale delay-4">
+                    <i class="fas fa-ship"></i>
+                    <span>Моторные лодки</span>
+                    <small>лодочные моторы 2т/4т, редуктора</small>
+                </div>
+                <div class="equipment-tile animate-scale delay-5">
+                    <i class="fas fa-toolbox"></i>
+                    <span>Бензоинструмент</span>
+                    <small>карбюратор, заточка, сборка</small>
+                </div>
+            </div>
+        </section>
+
+        <!-- БЛОК: РЕМОНТ ДВИГАТЕЛЕЙ -->
+        <section class="section-block" id="engines">
+            <div class="section-label mono animate-slide delay-1">// 04 — двигатели и агрегаты</div>
+            <h2 class="section-title animate-slide delay-1">Работы с двигателями и агрегатами</h2>
+
+            <div class="engine-grid">
+                <div class="engine-card animate-up delay-1"><i class="fas fa-wrench"></i><span>Капитальный ремонт двигателя — расточка блока, замена гильз, шлифовка коленвала</span></div>
+                <div class="engine-card animate-up delay-2"><i class="fas fa-water"></i><span>Ремонт лодочных моторов 2-такт/4-такт — от карбюратора до нижнего редуктора</span></div>
+                <div class="engine-card animate-up delay-3"><i class="fas fa-gear"></i><span>Восстановление редукторов и трансмиссий, включая вариаторы снегоходов</span></div>
+                <div class="engine-card animate-up delay-4"><i class="fas fa-fire"></i><span>Аргонная сварка алюминиевых и нержавеющих корпусов, рам, баков</span></div>
+                <div class="engine-card animate-up delay-5"><i class="fas fa-compass-drafting"></i><span>Ремонт и балансировка гребных винтов и валов</span></div>
+                <div class="engine-card animate-up delay-6"><i class="fas fa-bolt"></i><span>Диагностика и ремонт бортовой электрики, проводки, генераторов</span></div>
+                <div class="engine-card animate-up delay-1"><i class="fas fa-oil-can"></i><span>Плановая замена масла, фильтров и расходников по регламенту</span></div>
+                <div class="engine-card animate-up delay-2"><i class="fas fa-magnifying-glass"></i><span>Диагностика и ремонт ходовой части — амортизаторы, сайлентблоки, ШРУСы</span></div>
+                <div class="engine-card animate-up delay-3"><i class="fas fa-plug-circle-bolt"></i><span>Ремонт систем зажигания, свечей, стартеров и генераторов</span></div>
+            </div>
+        </section>
+
+        <!-- БЛОК: ПАЙПЛАЙН РЕМОНТА -->
+        <section class="section-block section-alt" id="stages">
+            <div class="section-label mono animate-slide delay-1">// 05 — процесс</div>
+            <h2 class="section-title animate-slide delay-1">Пайплайн ремонта «под ключ»</h2>
+
+            <div class="pipeline">
+                <div class="pipeline-track"></div>
+                <div class="pipeline-node animate-up delay-1">
+                    <span class="pipeline-tag mono">01 · intake.run</span>
+                    <h3>Приёмка и мойка</h3>
+                    <p>Осмотр, фотофиксация состояния, черновой план работ.</p>
+                    <span class="pipeline-status status-done"><i class="fas fa-circle"></i> ГОТОВО</span>
+                </div>
+                <div class="pipeline-node animate-up delay-2">
+                    <span class="pipeline-tag mono">02 · diagnostics.run</span>
+                    <h3>Диагностика и дефектовка</h3>
+                    <p>Замеры, компьютерная диагностика, поиск причины неисправности.</p>
+                    <span class="pipeline-status status-done"><i class="fas fa-circle"></i> ГОТОВО</span>
+                </div>
+                <div class="pipeline-node animate-up delay-3">
+                    <span class="pipeline-tag mono">03 · approve.wait</span>
+                    <h3>Согласование сметы</h3>
+                    <p>Клиент подтверждает объём и стоимость работ — без сюрпризов в итоговом счёте.</p>
+                    <span class="pipeline-status status-wait"><i class="fas fa-circle"></i> ОЖИДАНИЕ</span>
+                </div>
+                <div class="pipeline-node animate-up delay-4">
+                    <span class="pipeline-tag mono">04 · repair.run</span>
+                    <h3>Ремонт и сборка узлов</h3>
+                    <p>Замена деталей, ремонт агрегатов, сборка по регламенту производителя.</p>
+                    <span class="pipeline-status status-run"><i class="fas fa-circle"></i> В РАБОТЕ</span>
+                </div>
+                <div class="pipeline-node animate-up delay-5">
+                    <span class="pipeline-tag mono">05 · qc.run</span>
+                    <h3>Контрольная проверка</h3>
+                    <p>Повторная диагностика и тест-драйв после ремонта.</p>
+                    <span class="pipeline-status status-run"><i class="fas fa-circle"></i> В РАБОТЕ</span>
+                </div>
+                <div class="pipeline-node animate-up delay-6">
+                    <span class="pipeline-tag mono">06 · release.done</span>
+                    <h3>Выдача с гарантией</h3>
+                    <p>Гарантийный талон и рекомендации по дальнейшей эксплуатации техники.</p>
+                    <span class="pipeline-status status-success"><i class="fas fa-circle"></i> УСПЕХ</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ФОРМА ОБРАТНОЙ СВЯЗИ + ЯНДЕКС КАРТА -->
+        <section class="section-block">
+            <div class="section-label mono animate-slide delay-1">// 06 — связь</div>
+            <h2 class="section-title animate-slide delay-1">Оставьте заявку на ремонт</h2>
+
+            <div class="contact-with-map animate-up delay-2" id="request-form">
+                <!-- Левая колонка: форма -->
+                <div class="form-column">
+                    <h3>Запись в сервис</h3>
+                    <p>Опишите проблему или укажите желаемую услугу. Мастер перезвонит для уточнения деталей и записи в удобное время.</p>
+
+                    <form class="simple-form" action="https://formsubmit.co/ajax/SpectehniK-320303@yandex.ru" method="POST">
+                        <input type="hidden" name="_subject" value="Новая заявка с сайта СПЕЦТЕХНИК">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="text" name="name" placeholder="Ваше имя" required maxlength="25">
+                        <input type="tel" name="phone" placeholder="Ваш телефон" required>
+                        <textarea name="message" placeholder="Марка техники, неисправность, пожелания" rows="3" maxlength="500"></textarea>
+                        <button type="submit"><i class="fas fa-paper-plane"></i> отправить заявку</button>
+                    </form>
+
+                    <div class="form-contacts">
+                        <p><i class="fas fa-phone-alt"></i> 8 (3822) 32-03-03</p>
+                        <p><i class="fas fa-envelope"></i> SpectehniK-320303@yandex.ru</p>
+                        <p><img src="/images/max-icon-3652d9.png" alt="Иконка MAX" width="20" height="20"> <a href="https://max.ru/u/f9LHodD0cOJaovd9xA3PEdH4Vramag7Xr8A9WSDQc_AybQz0CuES5yhDfMQ">8 983 232-03-03</a></p>
+                    </div>
+                </div>
+
+                <!-- Правая колонка: Яндекс Карта -->
+                <div class="map-column">
+                    <h4><i class="fas fa-map-marker-alt"></i> мы на карте</h4>
+                    <div class="yandex-map-container">
+                        <iframe src="https://api-maps.yandex.ru/frame/v1/-/CTaxVYZT"
+                                width="100%"
+                                height="320"
+                                frameborder="0"
+                                allowfullscreen="true">
+                        </iframe>
+                    </div>
+                    <p class="map-address">
+                        <i class="fas fa-check-circle"></i>
+                        <strong>Адрес:</strong> г. Томск, ул. Мичурина 47г стр.1<br>
+                        <span>(ориентир — переулок Сергея Лазо, рядом остановка «Сергея Лазо», удобный подъезд для техники)</span>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ФИНАЛЬНАЯ ЦИТАТА -->
+        <div class="page">
+            <hr class="divider">
+            <div class="footer-bottom">
+                <span><i class="fas fa-motorcycle"></i> Полный цикл обслуживания мототехники и спецтехники</span>
+                <span class="footer-slogan mono"><i class="fas fa-terminal"></i> diagnostics_first.exe</span>
+            </div>
+            <div class="footer-quote">
+                «Мы возвращаем технику к жизни. Точная диагностика вместо догадок — чтобы ремонт был обоснованным и честным. СПЕЦТЕХНИК — сервис, которому можно доверять расчёт.»
+            </div>
+            <div class="footer-copyright">
+                © 2026 «СПЕЦТЕХНИК». Все права защищены.
+            </div>
+        </div>
+    </main>
+
+    <!-- Кнопка "Наверх" -->
+    <button id="scrollToTopBtn" class="scroll-top-btn" aria-label="Наверх">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    <!-- Подключение скриптов -->
+    <script src="backend/send-form.js?v=2"></script>
+    <script src="backend/scroll-to-top.js?v=2"></script>
+</body>
+
+</html>
